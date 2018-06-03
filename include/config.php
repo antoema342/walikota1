@@ -1,5 +1,5 @@
 <?php
-    setlocale(LC_ALL,'INDONESIA');
+    setlocale(LC_TIME,'id_ID');
 
     $host = "localhost";  
     $username = "root";   
