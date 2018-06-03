@@ -135,7 +135,7 @@
                                         <th widht="10"> Tanggal TL</th>
                                         <th width="18%">Keterangan </th>
                                         <th width="18%">Sumber </th>
-                                        <th width="10%">Status
+                                        <th width="10%">Status</th>
                                         <span class="right tooltipped" data-position="left" data-tooltip="Atur jumlah data yang ditampilkan"><a class="modal-trigger" href="#modal"><i class="material-icons" style="color: #333;">settings</i></a></span></th>
 
                                             <div id="modal" class="modal">
@@ -239,10 +239,10 @@
                                         }
                                         echo '
 
-                                        <td>'.$row['no_surat'].'<br/><hr/>'.$d." ".$nm." ".$y.'</td>
+                                        <td>'.$row['perihal'].'<br/><hr/>'.$d." ".$nm." ".$y.'</td>
                                         <td>'.$row['keterangan'].'</td>
-                                        <td>'.$row['status'].'</td>
                                         <td>Surat</td>
+                                        <td>'.$row['status'].'</td>
                                         ';
                                                     
                                         echo '
@@ -295,10 +295,10 @@
                                         }
                                         echo '
 
-                                        <td>'.$row['no_telepon'].'<br/><hr/>'.$d." ".$nm." ".$y.'</td>
+                                        <td>'.$row['perihal'].'<br/><hr/>'.$d." ".$nm." ".$y.'</td>
                                         <td>'.$row['keterangan'].'</td>
-                                        <td>'.$row['status'].'</td>
                                         <td>Telepon</td>
+                                        <td>'.$row['status'].'</td>
                                         ';
                                                     
                                         echo '
@@ -351,10 +351,10 @@
                                         }
                                         echo '
 
-                                       <td>'.$row['no_telepon'].'<br/><hr/>'.$d." ".$nm." ".$y.'</td>
+                                       <td>'.$row['perihal'].'<br/><hr/>'.$d." ".$nm." ".$y.'</td>
                                         <td>'.$row['keterangan'].'</td>
-                                        <td>'.$row['status'].'</td>
                                         <td>Lain-Lain</td>
+                                        <td>'.$row['status'].'</td>
                                         ';
                                                     
                                         echo '
