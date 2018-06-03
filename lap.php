@@ -61,7 +61,7 @@
                                         </ul>
                                     </div>
                                     <div class="col m5 hide-on-med-and-down">
-                                        <form method="post" action="?page=tsm">
+                                        <form method="post" action="?page=lap">
                                             <div class="input-field round-in-box">
                                                 <input id="search" type="search" name="cari" placeholder="Ketik dan tekan enter mencari data..." required>
                                                 <label for="search"><i class="material-icons">search</i></label>
