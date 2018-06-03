@@ -73,7 +73,7 @@ if(empty($_SESSION['admin'])){
                                             <input id="search" type="search" name="cari" placeholder="Ketik dan tekan enter mencari data..." required>
                                             <label for="search"><i class="material-icons">search</i></label>
                                             <input type="hidden" name="page" value="lap" class="hidden">
-                                            <input type="hidden" name="satus" value="<?php $status ?>" class="hidden">
+                                            <input type="hidden" name="status" value="<?php echo $status; ?>" class="hidden">
                                             <button type="submit" class="hidden"></button>
                                         </div>
                                     </form>
