@@ -212,6 +212,9 @@
 
                                         echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
 
+                                        echo '  
+                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
+
                                         echo'
                                         <td>'.$dtl." ".monthToIndonesia($mtl)." ".$ytl.'</td>
                                         <td>'.$row['keterangan'].'</td>
@@ -241,6 +244,9 @@
                                         <td>'.$d." ".monthToIndonesia($m)." ".$y.'</td>';
 
                                       echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+
+                                      echo '  
+                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
 
                                       echo'
                                         <td>'.$dtl." ".monthToIndonesia($mtl)." ".$ytl.'</td>
@@ -272,6 +278,8 @@
 
                                       echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
 
+                                      echo '  
+                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
 
                                       echo'
                                         <td>'.$dtl." ".monthToIndonesia($mtl)." ".$ytl.'</td>
