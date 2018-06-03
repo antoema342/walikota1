@@ -190,7 +190,7 @@
                                     <tr>';
 
                                 $search = "";
-                                if( isset($_POST['cari']) )
+                                if( isset($_GET['cari']) )
                                 {
                                     $search = "AND perihal LIKE '%".$_POST['cari']."%'";
                                 }
