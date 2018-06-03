@@ -229,7 +229,7 @@ if(empty($_SESSION['admin'])){
                         echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
 
                         echo '  
-                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
+                                        <td>'.substr($row['perihal'],0,200).'</td>';
 
                         echo'
                                         <td>'.$dtl." ".monthToIndonesia($mtl)." ".$ytl.'</td>
@@ -262,7 +262,7 @@ if(empty($_SESSION['admin'])){
                         echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
 
                         echo '  
-                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
+                                        <td>'.substr($row['perihal'],0,200).'</td>';
 
                         echo'
                                         <td>'.$dtl." ".monthToIndonesia($mtl)." ".$ytl.'</td>
@@ -295,7 +295,7 @@ if(empty($_SESSION['admin'])){
                         echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
 
                         echo '  
-                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
+                                        <td>'.substr($row['perihal'],0,200).'</td>';
 
                         echo'
                                         <td>'.$dtl." ".monthToIndonesia($mtl)." ".$ytl.'</td>
