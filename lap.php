@@ -61,11 +61,12 @@
                                         </ul>
                                     </div>
                                     <div class="col m5 hide-on-med-and-down">
-                                        <form method="post" action="?page=lap">
+                                        <form method="get" action="">
                                             <div class="input-field round-in-box">
                                                 <input id="search" type="search" name="cari" placeholder="Ketik dan tekan enter mencari data..." required>
                                                 <label for="search"><i class="material-icons">search</i></label>
-                                                <input type="submit" name="submit" class="hidden">
+                                                <input type="hidden" name="page" value="lap" class="hidden"></input>
+                                                <button type="submit" class="hidden"></button>
                                             </div>
                                         </form>
                                     </div>
