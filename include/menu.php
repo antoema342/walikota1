@@ -130,7 +130,7 @@
             <li><a class="dropdown-button" href="#!" data-activates="transaksi">Rekap Laporan<i class="material-icons md-18">arrow_drop_down</i></a></li>
                 <ul id='transaksi' class='dropdown-content'>
                     <li><a href="?page=lap">Selesai</a></li>
-                    <li><a href="#">Dalam Proses</a></li>
+                    <li><a href="?page=lap&status=Dalam proses">Dalam Proses</a></li>
                     
                 </ul>
                 <?php               }
