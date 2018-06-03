@@ -191,13 +191,13 @@
                                 $search = "";
                                 if( isset($_POST['cari']) )
                                 {
-                                    $search = $_POST['cari'];
+                                    $search = "AND perihal LIKE '%".$_POST['cari']."%'";
                                 }
 
                                 //script untuk menampilkan data
-                                $query = mysqli_query($config, "SELECT * FROM tbl_disposisisurat INNER JOIN tbl_tl ON tbl_tl.id_disposisi = tbl_disposisisurat.id_disposisi Where `status`='Selesai' AND perihal LIKE '%$search%' ORDER by tbl_disposisisurat.id_disposisi DESC LIMIT $curr, $limit");
-                                $query1 = mysqli_query($config, "SELECT * FROM tbl_disposisitlp INNER JOIN tbl_tl_tlp ON tbl_tl_tlp.id_disposisitlp = tbl_disposisitlp.id_disposisitlp Where `status`='Selesai' AND perihal LIKE '%$search%' ORDER by tbl_disposisitlp.id_disposisitlp DESC LIMIT $curr, $limit");
-                                $query2 = mysqli_query($config, "SELECT * FROM tbl_disposisilain INNER JOIN tbl_tl_lain ON tbl_tl_lain.id_disposisilain = tbl_disposisilain.id_disposisilain Where `status`='Selesai' AND perihal LIKE '%.$search.%' ORDER by tbl_disposisilain.id_disposisilain DESC LIMIT $curr, $limit");
+                                $query = mysqli_query($config, "SELECT * FROM tbl_disposisisurat INNER JOIN tbl_tl ON tbl_tl.id_disposisi = tbl_disposisisurat.id_disposisi Where `status`='Selesai' $search ORDER by tbl_disposisisurat.id_disposisi DESC LIMIT $curr, $limit");
+                                $query1 = mysqli_query($config, "SELECT * FROM tbl_disposisitlp INNER JOIN tbl_tl_tlp ON tbl_tl_tlp.id_disposisitlp = tbl_disposisitlp.id_disposisitlp Where `status`='Selesai' $search ORDER by tbl_disposisitlp.id_disposisitlp DESC LIMIT $curr, $limit");
+                                $query2 = mysqli_query($config, "SELECT * FROM tbl_disposisilain INNER JOIN tbl_tl_lain ON tbl_tl_lain.id_disposisilain = tbl_disposisilain.id_disposisilain Where `status`='Selesai' $search ORDER by tbl_disposisilain.id_disposisilain DESC LIMIT $curr, $limit");
                                 $no = 1;
                                 if(mysqli_num_rows($query) > 0 || mysqli_num_rows($query1) > 0 || mysqli_num_rows($query2) > 0){
                                   if(mysqli_num_rows($query) > 0)
