@@ -190,9 +190,9 @@
                                     <tr>';
 
                                 $search = "";
-                                if( isset($_GET['cari']) )
+                                if(isset($_GET['cari']) )
                                 {
-                                    $search = "AND perihal LIKE '%".$_POST['cari']."%'";
+                                    $search = "AND perihal LIKE '%".$_GET['cari']."%'";
                                 }
 
                                 //script untuk menampilkan data
