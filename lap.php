@@ -243,7 +243,7 @@
                                         } echo '</td>';
 
                                         echo'
-                                        <td>'.$row['tgl'].'</td>
+                                        <td>'.date("d F Y",strtotime($row['tgl'])).'</td>
                                         <td>'.$row['keterangan'].'</td>
                                         <td>Surat</td>
                                         <td>'.$row['status'].'</td>
@@ -303,9 +303,9 @@
                                       } echo '</td>';
 
                                       echo'
-                                        <td>'.$row['tgl'].'</td>
+                                        <td>'.date("d F Y",strtotime($row['tgl'])).'</td>
                                         <td>'.$row['keterangan'].'</td>
-                                        <td>Surat</td>
+                                        <td>Telepon</td>
                                         <td>'.$row['status'].'</td>
                                         ';
 
@@ -365,7 +365,7 @@
                                       echo'
                                         <td>'.date("d F Y",strtotime($row['tgl'])).'</td>
                                         <td>'.$row['keterangan'].'</td>
-                                        <td>Surat</td>
+                                        <td>Lain-lain</td>
                                         <td>'.$row['status'].'</td>
                                         ';
 
@@ -380,49 +380,6 @@
                         </div>
                     </div>
                     <!-- Row form END -->';
-
-                    $query = mysqli_query($config, "SELECT * FROM tbl_surat_masuk");
-                    $cdata = mysqli_num_rows($query);
-                    $cpg = ceil($cdata/$limit);
-
-                    echo '<br/><!-- Pagination START -->
-                          <ul class="pagination">';
-
-                    if($cdata > $limit ){
-
-                        //first and previous pagging
-                        if($pg > 1){
-                            $prev = $pg - 1;
-                            echo '<li><a href="?page=tsm&pg=1"><i class="material-icons md-48">first_page</i></a></li>
-                                  <li><a href="?page=tsm&pg='.$prev.'"><i class="material-icons md-48">chevron_left</i></a></li>';
-                        } else {
-                            echo '<li class="disabled"><a href=""><i class="material-icons md-48">first_page</i></a></li>
-                                  <li class="disabled"><a href=""><i class="material-icons md-48">chevron_left</i></a></li>';
-                        }
-
-                        //perulangan pagging
-                        for($i=1; $i <= $cpg; $i++)
-                            if($i != $pg){
-                                echo '<li class="waves-effect waves-dark"><a href="?page=tsm&pg='.$i.'"> '.$i.' </a></li>';
-                            } else {
-                                echo '<li class="active waves-effect waves-dark"><a href="?page=tsm&pg='.$i.'"> '.$i.' </a></li>';
-                            }
-
-                        //last and next pagging
-                        if($pg < $cpg){
-                            $next = $pg + 1;
-                            echo '<li><a href="?page=tsm&pg='.$next.'"><i class="material-icons md-48">chevron_right</i></a></li>
-                                  <li><a href="?page=tsm&pg='.$cpg.'"><i class="material-icons md-48">last_page</i></a></li>';
-                        } else {
-                            echo '<li class="disabled"><a href=""><i class="material-icons md-48">chevron_right</i></a></li>
-                                  <li class="disabled"><a href=""><i class="material-icons md-48">last_page</i></a></li>';
-                        }
-                        echo '
-                        </ul>
-                        <!-- Pagination END -->';
-                    } else {
-                        echo '';
-                         }
                 }
             }
         }
