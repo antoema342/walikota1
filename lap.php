@@ -197,16 +197,7 @@
                                   if(mysqli_num_rows($query) > 0)
                                     while($row = mysqli_fetch_array($query)){
                                       echo '
-                                        <td>'.$no++. '</td>
-                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
-
-                                        if(!empty($row['foto'])){
-                                            echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
-                                        } else {
-                                            echo '<em>Tidak ada file yang di upload</em>';
-                                        } echo '</td>
-                                        <td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
-
+                                        <td>'.$no++. '</td>';
 
                                         $y = substr($row['tgl_surat'],0,4);
                                         $m = substr($row['tgl_surat'],5,2);
@@ -237,10 +228,21 @@
                                         } elseif($m == "12"){
                                             $nm = "Desember";
                                         }
-                                        echo '
 
-                                        <td>'.$row['perihal'].'</td>
-                                        <td>'.$d." ".$nm." ".$y.'</td>
+                                        echo'
+                                        <td>'.$d." ".$nm." ".$y.'</td>';
+
+                                        echo '  
+                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
+
+                                        if(!empty($row['foto'])){
+                                            echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
+                                        } else {
+                                            echo '<em>Tidak ada file yang di upload</em>';
+                                        } echo '</td>
+                                        <td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+
+                                        echo'
                                         <td>'.$row['keterangan'].'</td>
                                         <td>Surat</td>
                                         <td>'.$row['status'].'</td>
@@ -294,16 +296,26 @@
                                         } elseif($m == "12"){
                                             $nm = "Desember";
                                         }
-                                        echo '
+                                      echo'
+                                        <td>'.$d." ".$nm." ".$y.'</td>';
 
-                                        <td>'.$row['perihal'].'</td>
-                                        <td>'.$d." ".$nm." ".$y.'</td>
+                                      echo '  
+                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
+
+                                      if(!empty($row['foto'])){
+                                          echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
+                                      } else {
+                                          echo '<em>Tidak ada file yang di upload</em>';
+                                      } echo '</td>
+                                        <td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+
+                                      echo'
                                         <td>'.$row['keterangan'].'</td>
-                                        <td>Telepon</td>
+                                        <td>Surat</td>
                                         <td>'.$row['status'].'</td>
                                         ';
 
-                                        echo '
+                                      echo '
                                         </td>
                                     </tr>';
                                 }
@@ -351,16 +363,26 @@
                                         } elseif($m == "12"){
                                             $nm = "Desember";
                                         }
-                                        echo '
+                                      echo'
+                                        <td>'.$d." ".$nm." ".$y.'</td>';
 
-                                       <td>'.$row['perihal'].'</td>
-                                        <td>'.$d." ".$nm." ".$y.'</td>
+                                      echo '  
+                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
+
+                                      if(!empty($row['foto'])){
+                                          echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
+                                      } else {
+                                          echo '<em>Tidak ada file yang di upload</em>';
+                                      } echo '</td>
+                                        <td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+
+                                      echo'
                                         <td>'.$row['keterangan'].'</td>
-                                        <td>Lain-Lain</td>
+                                        <td>Surat</td>
                                         <td>'.$row['status'].'</td>
                                         ';
 
-                                        echo '
+                                      echo '
                                         </td>
                                     </tr>';
                                 }
