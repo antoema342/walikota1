@@ -45,7 +45,14 @@
                     $pg = 1;
                 } else {
                     $curr = ($pg - 1) * $limit;
-                }?>
+                }
+
+                $status = "Selesai";
+                if(isset($_GET['status']) && $_GET['status']=="Dalam proses")
+                {
+                    $status = 'Dalam proses';
+                }
+                ?>
 
                 <!-- Row Start -->
                 <div class="row">
@@ -65,7 +72,8 @@
                                             <div class="input-field round-in-box">
                                                 <input id="search" type="search" name="cari" placeholder="Ketik dan tekan enter mencari data..." required>
                                                 <label for="search"><i class="material-icons">search</i></label>
-                                                <input type="hidden" name="page" value="lap" class="hidden"></input>
+                                                <input type="hidden" name="page" value="lap" class="hidden">
+                                                <input type="hidden" name="satus" value="<?php $status ?>" class="hidden">
                                                 <button type="submit" class="hidden"></button>
                                             </div>
                                         </form>
@@ -195,10 +203,11 @@
                                     $search = "AND perihal LIKE '%".$_GET['cari']."%'";
                                 }
 
+
                                 //script untuk menampilkan data
-                                $query = mysqli_query($config, "SELECT * FROM tbl_disposisisurat INNER JOIN tbl_tl ON tbl_tl.id_disposisi = tbl_disposisisurat.id_disposisi Where `status`='Selesai' $search ORDER by tbl_disposisisurat.id_disposisi DESC LIMIT $curr, $limit");
-                                $query1 = mysqli_query($config, "SELECT * FROM tbl_disposisitlp INNER JOIN tbl_tl_tlp ON tbl_tl_tlp.id_disposisitlp = tbl_disposisitlp.id_disposisitlp Where `status`='Selesai' $search ORDER by tbl_disposisitlp.id_disposisitlp DESC LIMIT $curr, $limit");
-                                $query2 = mysqli_query($config, "SELECT * FROM tbl_disposisilain INNER JOIN tbl_tl_lain ON tbl_tl_lain.id_disposisilain = tbl_disposisilain.id_disposisilain Where `status`='Selesai' $search ORDER by tbl_disposisilain.id_disposisilain DESC LIMIT $curr, $limit");
+                                $query = mysqli_query($config, "SELECT * FROM tbl_disposisisurat INNER JOIN tbl_tl ON tbl_tl.id_disposisi = tbl_disposisisurat.id_disposisi Where `status`='$status' $search ORDER by tbl_disposisisurat.id_disposisi DESC LIMIT $curr, $limit");
+                                $query1 = mysqli_query($config, "SELECT * FROM tbl_disposisitlp INNER JOIN tbl_tl_tlp ON tbl_tl_tlp.id_disposisitlp = tbl_disposisitlp.id_disposisitlp Where `status`='$status' $search ORDER by tbl_disposisitlp.id_disposisitlp DESC LIMIT $curr, $limit");
+                                $query2 = mysqli_query($config, "SELECT * FROM tbl_disposisilain INNER JOIN tbl_tl_lain ON tbl_tl_lain.id_disposisilain = tbl_disposisilain.id_disposisilain Where `status`='$status' $search ORDER by tbl_disposisilain.id_disposisilain DESC LIMIT $curr, $limit");
                                 $no = 1;
                                 if(mysqli_num_rows($query) > 0 || mysqli_num_rows($query1) > 0 || mysqli_num_rows($query2) > 0){
                                   if(mysqli_num_rows($query) > 0)

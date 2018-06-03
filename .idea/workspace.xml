@@ -16,48 +16,49 @@
       <file leaf-file-name="lap.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="194" column="73" lean-forward="false" selection-start-line="194" selection-start-column="73" selection-end-line="194" selection-end-column="73" />
+            <state relative-caret-position="207">
+              <caret line="77" column="50" lean-forward="true" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
               <folding>
-                <marker date="1528039074958" expanded="true" signature="285:470" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="1295:1327" ph="SELECT surat... tbl_sett" />
-                <marker date="1528039074958" expanded="true" signature="3682:4185" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="3736:4150" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="3807:4111" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="3880:4068" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="4442:4946" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="4496:4911" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="4567:4872" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="4640:4829" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="5201:5704" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="5255:5669" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="5326:5630" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="5399:5587" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="5995:6644" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="5995:7243" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="6057:6644" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="6130:6644" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="6171:6644" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="6942:6954" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="7059:7243" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="7141:7243" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="7331:7371" ph="SELECT id_se... tbl_sett" />
-                <marker date="1528039074958" expanded="true" signature="7612:9670" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="7699:9670" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="7793:9670" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="8020:8032" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="8033:8229" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="8341:8361" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="8362:9398" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="8500:9327" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="9495:9670" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="10185:10275" ph="UPDATE tbl_sett... " />
-                <marker date="1528039074958" expanded="true" signature="11371:11412" ph="..." />
-                <marker date="1528039074958" expanded="true" signature="11806:11956" ph="SELECT * FRO... tbl_disposisisurat" />
-                <marker date="1528039074958" expanded="true" signature="11806:12006" ph="SELECT * FRO... tbl_disposisisurat" />
-                <marker date="1528039074958" expanded="true" signature="12081:12292" ph="SELECT * FRO... tbl_disposisitlp" />
-                <marker date="1528039074958" expanded="true" signature="12367:12586" ph="SELECT * FRO... tbl_disposisilain" />
-                <marker date="1528039074958" expanded="true" signature="12551:12586" ph="SELECT * FRO... tbl_disposisilain" />
+                <marker date="1528039527495" expanded="true" signature="285:470" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="1295:1327" ph="SELECT surat... tbl_sett" />
+                <marker date="1528039527495" expanded="true" signature="4012:4515" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="4066:4480" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="4137:4441" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="4210:4398" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="4772:5276" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="4826:5241" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="4897:5202" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="4970:5159" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="5531:6034" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="5585:5999" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="5656:5960" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="5729:5917" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="6325:6974" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="6325:7573" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="6387:6974" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="6460:6974" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="6501:6552" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="6501:6974" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="7272:7284" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="7389:7573" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="7471:7573" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="7661:7701" ph="SELECT id_se... tbl_sett" />
+                <marker date="1528039527495" expanded="true" signature="7942:10000" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="8029:10000" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="8123:10000" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="8350:8362" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="8363:8559" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="8671:8691" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="8692:9728" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="8830:9657" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="9825:10000" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="10515:10605" ph="UPDATE tbl_sett... " />
+                <marker date="1528039527495" expanded="true" signature="11701:11742" ph="..." />
+                <marker date="1528039527495" expanded="true" signature="12137:12287" ph="SELECT * FRO... tbl_disposisisurat" />
+                <marker date="1528039527495" expanded="true" signature="12137:12337" ph="SELECT * FRO... tbl_disposisisurat" />
+                <marker date="1528039527495" expanded="true" signature="12412:12623" ph="SELECT * FRO... tbl_disposisitlp" />
+                <marker date="1528039527495" expanded="true" signature="12698:12917" ph="SELECT * FRO... tbl_disposisilain" />
+                <marker date="1528039527495" expanded="true" signature="12882:12917" ph="SELECT * FRO... tbl_disposisilain" />
               </folding>
             </state>
           </provider>
@@ -208,12 +209,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528029933150</updated>
-      <workItem from="1528029934519" duration="7420000" />
+      <workItem from="1528029934519" duration="7873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7420000" />
+    <option name="totallyTimeSpent" value="7873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="74" y="23" width="1366" height="797" extended-state="0" />
@@ -294,48 +295,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="194" column="73" lean-forward="false" selection-start-line="194" selection-start-column="73" selection-end-line="194" selection-end-column="73" />
+        <state relative-caret-position="207">
+          <caret line="77" column="50" lean-forward="true" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
           <folding>
-            <marker date="1528039074958" expanded="true" signature="285:470" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="1295:1327" ph="SELECT surat... tbl_sett" />
-            <marker date="1528039074958" expanded="true" signature="3682:4185" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="3736:4150" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="3807:4111" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="3880:4068" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="4442:4946" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="4496:4911" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="4567:4872" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="4640:4829" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="5201:5704" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="5255:5669" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="5326:5630" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="5399:5587" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="5995:6644" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="5995:7243" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="6057:6644" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="6130:6644" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="6171:6644" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="6942:6954" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="7059:7243" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="7141:7243" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="7331:7371" ph="SELECT id_se... tbl_sett" />
-            <marker date="1528039074958" expanded="true" signature="7612:9670" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="7699:9670" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="7793:9670" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="8020:8032" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="8033:8229" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="8341:8361" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="8362:9398" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="8500:9327" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="9495:9670" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="10185:10275" ph="UPDATE tbl_sett... " />
-            <marker date="1528039074958" expanded="true" signature="11371:11412" ph="..." />
-            <marker date="1528039074958" expanded="true" signature="11806:11956" ph="SELECT * FRO... tbl_disposisisurat" />
-            <marker date="1528039074958" expanded="true" signature="11806:12006" ph="SELECT * FRO... tbl_disposisisurat" />
-            <marker date="1528039074958" expanded="true" signature="12081:12292" ph="SELECT * FRO... tbl_disposisitlp" />
-            <marker date="1528039074958" expanded="true" signature="12367:12586" ph="SELECT * FRO... tbl_disposisilain" />
-            <marker date="1528039074958" expanded="true" signature="12551:12586" ph="SELECT * FRO... tbl_disposisilain" />
+            <marker date="1528039527495" expanded="true" signature="285:470" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="1295:1327" ph="SELECT surat... tbl_sett" />
+            <marker date="1528039527495" expanded="true" signature="4012:4515" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="4066:4480" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="4137:4441" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="4210:4398" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="4772:5276" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="4826:5241" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="4897:5202" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="4970:5159" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="5531:6034" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="5585:5999" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="5656:5960" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="5729:5917" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="6325:6974" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="6325:7573" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="6387:6974" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="6460:6974" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="6501:6552" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="6501:6974" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="7272:7284" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="7389:7573" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="7471:7573" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="7661:7701" ph="SELECT id_se... tbl_sett" />
+            <marker date="1528039527495" expanded="true" signature="7942:10000" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="8029:10000" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="8123:10000" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="8350:8362" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="8363:8559" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="8671:8691" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="8692:9728" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="8830:9657" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="9825:10000" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="10515:10605" ph="UPDATE tbl_sett... " />
+            <marker date="1528039527495" expanded="true" signature="11701:11742" ph="..." />
+            <marker date="1528039527495" expanded="true" signature="12137:12287" ph="SELECT * FRO... tbl_disposisisurat" />
+            <marker date="1528039527495" expanded="true" signature="12137:12337" ph="SELECT * FRO... tbl_disposisisurat" />
+            <marker date="1528039527495" expanded="true" signature="12412:12623" ph="SELECT * FRO... tbl_disposisitlp" />
+            <marker date="1528039527495" expanded="true" signature="12698:12917" ph="SELECT * FRO... tbl_disposisilain" />
+            <marker date="1528039527495" expanded="true" signature="12882:12917" ph="SELECT * FRO... tbl_disposisilain" />
           </folding>
         </state>
       </provider>
