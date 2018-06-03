@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cbd0a58-6cc2-4ba4-b599-984465796be6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/include/config.php" afterPath="$PROJECT_DIR$/include/config.php" />
+      <change beforePath="$PROJECT_DIR$/coba_disposisi.php" afterPath="$PROJECT_DIR$/coba_disposisi.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +16,8 @@
       <file leaf-file-name="lap.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="191" column="58" lean-forward="true" selection-start-line="191" selection-start-column="58" selection-end-line="191" selection-end-column="58" />
+            <state relative-caret-position="0">
+              <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding>
                 <marker date="1528036924799" expanded="true" signature="285:470" ph="..." />
                 <marker date="1528036924799" expanded="true" signature="1295:1327" ph="SELECT surat... tbl_sett" />
@@ -63,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -77,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/admin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding>
                 <marker date="1528029871352" expanded="true" signature="4875:4904" ph="SELECT * FRO... tbl_surat_masuk" />
                 <marker date="1528029871352" expanded="true" signature="5023:5053" ph="SELECT * FRO... tbl_surat_keluar" />
@@ -89,23 +89,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coba_disposisi.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="coba_disposisi.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/coba_disposisi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="17">
+              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
               <folding>
-                <marker date="1528029871389" expanded="true" signature="333:389" ph="SELECT * FRO... tbl_surat_masuk" />
-                <marker date="1528029871389" expanded="true" signature="3178:3401" ph="INSERT INTO tbl_disposisi... " />
-                <marker date="1528029871389" expanded="true" signature="3637:3818" ph="..." />
-                <marker date="1528029871389" expanded="true" signature="5129:5594" ph="..." />
-                <marker date="1528029871389" expanded="true" signature="5179:5563" ph="..." />
-                <marker date="1528029871389" expanded="true" signature="5244:5528" ph="..." />
-                <marker date="1528029871389" expanded="true" signature="5313:5489" ph="..." />
-                <marker date="1528029871389" expanded="true" signature="5828:6297" ph="..." />
-                <marker date="1528029871389" expanded="true" signature="5878:6266" ph="..." />
-                <marker date="1528029871389" expanded="true" signature="5943:6231" ph="..." />
-                <marker date="1528029871389" expanded="true" signature="6012:6192" ph="..." />
+                <marker date="1528037134181" expanded="true" signature="365:421" ph="SELECT * FRO... tbl_surat_masuk" />
+                <marker date="1528037134181" expanded="true" signature="3210:3433" ph="INSERT INTO tbl_disposisi... " />
+                <marker date="1528037134181" expanded="true" signature="3669:3850" ph="..." />
+                <marker date="1528037134181" expanded="true" signature="5161:5626" ph="..." />
+                <marker date="1528037134181" expanded="true" signature="5211:5595" ph="..." />
+                <marker date="1528037134181" expanded="true" signature="5276:5560" ph="..." />
+                <marker date="1528037134181" expanded="true" signature="5345:5521" ph="..." />
+                <marker date="1528037134181" expanded="true" signature="5860:6329" ph="..." />
+                <marker date="1528037134181" expanded="true" signature="5910:6298" ph="..." />
+                <marker date="1528037134181" expanded="true" signature="5975:6263" ph="..." />
+                <marker date="1528037134181" expanded="true" signature="6044:6224" ph="..." />
               </folding>
             </state>
           </provider>
@@ -127,6 +127,7 @@
       <list>
         <option value="$PROJECT_DIR$/lap.php" />
         <option value="$PROJECT_DIR$/include/config.php" />
+        <option value="$PROJECT_DIR$/coba_disposisi.php" />
       </list>
     </option>
   </component>
@@ -202,12 +203,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528029933150</updated>
-      <workItem from="1528029934519" duration="5420000" />
+      <workItem from="1528029934519" duration="5483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5420000" />
+    <option name="totallyTimeSpent" value="5483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="74" y="23" width="1366" height="797" extended-state="0" />
@@ -244,44 +245,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/coba_disposisi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding>
-            <marker date="1528029871389" expanded="true" signature="333:389" ph="SELECT * FRO... tbl_surat_masuk" />
-            <marker date="1528029871389" expanded="true" signature="3178:3401" ph="INSERT INTO tbl_disposisi... " />
-            <marker date="1528029871389" expanded="true" signature="3637:3818" ph="..." />
-            <marker date="1528029871389" expanded="true" signature="5129:5594" ph="..." />
-            <marker date="1528029871389" expanded="true" signature="5179:5563" ph="..." />
-            <marker date="1528029871389" expanded="true" signature="5244:5528" ph="..." />
-            <marker date="1528029871389" expanded="true" signature="5313:5489" ph="..." />
-            <marker date="1528029871389" expanded="true" signature="5828:6297" ph="..." />
-            <marker date="1528029871389" expanded="true" signature="5878:6266" ph="..." />
-            <marker date="1528029871389" expanded="true" signature="5943:6231" ph="..." />
-            <marker date="1528029871389" expanded="true" signature="6012:6192" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1528029871352" expanded="true" signature="4875:4904" ph="SELECT * FRO... tbl_surat_masuk" />
-            <marker date="1528029871352" expanded="true" signature="5023:5053" ph="SELECT * FRO... tbl_surat_keluar" />
-            <marker date="1528029871352" expanded="true" signature="5172:5199" ph="SELECT * FRO... tbl_disposisi" />
-            <marker date="1528029871352" expanded="true" signature="5318:5347" ph="SELECT * FRO... tbl_klasifikasi" />
-            <marker date="1528029871352" expanded="true" signature="5463:5485" ph="SELECT * FRO... tbl_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="191" column="58" lean-forward="true" selection-start-line="191" selection-start-column="58" selection-end-line="191" selection-end-column="58" />
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding>
             <marker date="1528036924799" expanded="true" signature="285:470" ph="..." />
             <marker date="1528036924799" expanded="true" signature="1295:1327" ph="SELECT surat... tbl_sett" />
@@ -329,8 +296,42 @@
     <entry file="file://$PROJECT_DIR$/include/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding>
+            <marker date="1528029871352" expanded="true" signature="4875:4904" ph="SELECT * FRO... tbl_surat_masuk" />
+            <marker date="1528029871352" expanded="true" signature="5023:5053" ph="SELECT * FRO... tbl_surat_keluar" />
+            <marker date="1528029871352" expanded="true" signature="5172:5199" ph="SELECT * FRO... tbl_disposisi" />
+            <marker date="1528029871352" expanded="true" signature="5318:5347" ph="SELECT * FRO... tbl_klasifikasi" />
+            <marker date="1528029871352" expanded="true" signature="5463:5485" ph="SELECT * FRO... tbl_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coba_disposisi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding>
+            <marker date="1528037134181" expanded="true" signature="365:421" ph="SELECT * FRO... tbl_surat_masuk" />
+            <marker date="1528037134181" expanded="true" signature="3210:3433" ph="INSERT INTO tbl_disposisi... " />
+            <marker date="1528037134181" expanded="true" signature="3669:3850" ph="..." />
+            <marker date="1528037134181" expanded="true" signature="5161:5626" ph="..." />
+            <marker date="1528037134181" expanded="true" signature="5211:5595" ph="..." />
+            <marker date="1528037134181" expanded="true" signature="5276:5560" ph="..." />
+            <marker date="1528037134181" expanded="true" signature="5345:5521" ph="..." />
+            <marker date="1528037134181" expanded="true" signature="5860:6329" ph="..." />
+            <marker date="1528037134181" expanded="true" signature="5910:6298" ph="..." />
+            <marker date="1528037134181" expanded="true" signature="5975:6263" ph="..." />
+            <marker date="1528037134181" expanded="true" signature="6044:6224" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

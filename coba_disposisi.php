@@ -1,4 +1,5 @@
 <?php
+    setlocale(LC_TIME,'id_ID');
     //cek session
     if(empty($_SESSION['admin'])){
         $_SESSION['err'] = '<center>Anda harus login terlebih dahulu!</center>';
