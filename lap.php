@@ -134,6 +134,7 @@
                                         <th width="18%">Perihal</th>
                                         <th widht="10"> Tanggal TL</th>
                                         <th width="18%">Keterangan </th>
+                                        <th width="18%">Sumber </th>
                                         <th width="10%">Status
                                         <span class="right tooltipped" data-position="left" data-tooltip="Atur jumlah data yang ditampilkan"><a class="modal-trigger" href="#modal"><i class="material-icons" style="color: #333;">settings</i></a></span></th>
 
@@ -188,9 +189,12 @@
                                     <tr>';
 
                                 //script untuk menampilkan data
-                                $query = mysqli_query($config, "SELECT * FROM tbl_disposisisurat ORDER by id_disposisi DESC LIMIT $curr, $limit");
-                                if(mysqli_num_rows($query) > 0){
-                                    $no = 1;
+                                $query = mysqli_query($config, "SELECT * FROM tbl_disposisisurat  Where `status`='Selesai' ORDER by id_disposisi DESC LIMIT $curr, $limit");
+                                $query1 = mysqli_query($config, "SELECT * FROM tbl_disposisitlp Where `status`='Selesai' ORDER by id_disposisitlp DESC LIMIT $curr, $limit");
+                                $query2 = mysqli_query($config, "SELECT * FROM tbl_disposisilain Where `status`='Selesai' ORDER by id_disposisi DESC LIMIT $curr, $limit");
+                                $no = 1;
+                                if(mysqli_num_rows($query) > 0 || mysqli_num_rows($query1) > 0 || mysqli_num_rows($query2) > 0){
+                                  if(mysqli_num_rows($query) > 0)
                                     while($row = mysqli_fetch_array($query)){
                                       echo '
                                         <td>'.$no++. '</td>
@@ -237,17 +241,130 @@
 
                                         <td>'.$row['no_surat'].'<br/><hr/>'.$d." ".$nm." ".$y.'</td>
                                         <td>'.$row['keterangan'].'</td>
-                                        <td>'.$row['status'].'</td>';
+                                        <td>'.$row['status'].'</td>
+                                        <td>Surat</td>
+                                        ';
                                                     
                                         echo '
                                         </td>
-                                    </tr>
-                                </tbody>';
+                                    </tr>';
+                                }
+                                
+                                if(mysqli_num_rows($query1) > 0)
+                                  while($row = mysqli_fetch_array($query1)){
+                                      echo '
+                                        <td>'.$no++. '</td>
+                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
+
+                                        if(!empty($row['foto'])){
+                                            echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
+                                        } else {
+                                            echo '<em>Tidak ada file yang di upload</em>';
+                                        } echo '</td>
+                                        <td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+                                      
+
+                                        $y = substr($row['tgl_telepon'],0,4);
+                                        $m = substr($row['tgl_telepon'],5,2);
+                                        $d = substr($row['tgl_telepon'],8,2);
+
+                                        if($m == "01"){
+                                            $nm = "Januari";
+                                        } elseif($m == "02"){
+                                            $nm = "Februari";
+                                        } elseif($m == "03"){
+                                            $nm = "Maret";
+                                        } elseif($m == "04"){
+                                            $nm = "April";
+                                        } elseif($m == "05"){
+                                            $nm = "Mei";
+                                        } elseif($m == "06"){
+                                            $nm = "Juni";
+                                        } elseif($m == "07"){
+                                            $nm = "Juli";
+                                        } elseif($m == "08"){
+                                            $nm = "Agustus";
+                                        } elseif($m == "09"){
+                                            $nm = "September";
+                                        } elseif($m == "10"){
+                                            $nm = "Oktober";
+                                        } elseif($m == "11"){
+                                            $nm = "November";
+                                        } elseif($m == "12"){
+                                            $nm = "Desember";
+                                        }
+                                        echo '
+
+                                        <td>'.$row['no_telepon'].'<br/><hr/>'.$d." ".$nm." ".$y.'</td>
+                                        <td>'.$row['keterangan'].'</td>
+                                        <td>'.$row['status'].'</td>
+                                        <td>Telepon</td>
+                                        ';
+                                                    
+                                        echo '
+                                        </td>
+                                    </tr>';
+                                }
+
+                                if(mysqli_num_rows($query2) > 0)
+                                  while($row = mysqli_fetch_array($query2)){
+                                      echo '
+                                        <td>'.$no++. '</td>
+                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
+
+                                        if(!empty($row['foto'])){
+                                            echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
+                                        } else {
+                                            echo '<em>Tidak ada file yang di upload</em>';
+                                        } echo '</td>
+                                        <td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+                                      
+
+                                        $y = substr($row['tgl_lain'],0,4);
+                                        $m = substr($row['tgl_lain'],5,2);
+                                        $d = substr($row['tgl_lain'],8,2);
+
+                                        if($m == "01"){
+                                            $nm = "Januari";
+                                        } elseif($m == "02"){
+                                            $nm = "Februari";
+                                        } elseif($m == "03"){
+                                            $nm = "Maret";
+                                        } elseif($m == "04"){
+                                            $nm = "April";
+                                        } elseif($m == "05"){
+                                            $nm = "Mei";
+                                        } elseif($m == "06"){
+                                            $nm = "Juni";
+                                        } elseif($m == "07"){
+                                            $nm = "Juli";
+                                        } elseif($m == "08"){
+                                            $nm = "Agustus";
+                                        } elseif($m == "09"){
+                                            $nm = "September";
+                                        } elseif($m == "10"){
+                                            $nm = "Oktober";
+                                        } elseif($m == "11"){
+                                            $nm = "November";
+                                        } elseif($m == "12"){
+                                            $nm = "Desember";
+                                        }
+                                        echo '
+
+                                       <td>'.$row['no_telepon'].'<br/><hr/>'.$d." ".$nm." ".$y.'</td>
+                                        <td>'.$row['keterangan'].'</td>
+                                        <td>'.$row['status'].'</td>
+                                        <td>Lain-Lain</td>
+                                        ';
+                                                    
+                                        echo '
+                                        </td>
+                                    </tr>';
                                 }
                             } else {
                                 echo '<tr><td colspan="5"><center><p class="add">Tidak ada data untuk ditampilkan. <u><a href="?page=tsm&act=add">Tambah data baru</a></u></p></center></td></tr>';
                             }
-                          echo '</table>
+                          echo '</tbody></table>
                         </div>
                     </div>
                     <!-- Row form END -->';
