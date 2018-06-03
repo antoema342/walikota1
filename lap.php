@@ -205,9 +205,18 @@ if(empty($_SESSION['admin'])){
 
 
             //script untuk menampilkan data
-            $query = mysqli_query($config, "SELECT * FROM tbl_disposisisurat LEFT JOIN tbl_tl ON tbl_tl.id_disposisi = tbl_disposisisurat.id_disposisi Where `status`='$status' $search ORDER by tbl_disposisisurat.id_disposisi DESC LIMIT $curr, $limit");
-            $query1 = mysqli_query($config, "SELECT * FROM tbl_disposisitlp LEFT JOIN tbl_tl_tlp ON tbl_tl_tlp.id_disposisitlp = tbl_disposisitlp.id_disposisitlp Where `status`='$status' $search ORDER by tbl_disposisitlp.id_disposisitlp DESC LIMIT $curr, $limit");
-            $query2 = mysqli_query($config, "SELECT * FROM tbl_disposisilain LEFT JOIN tbl_tl_lain ON tbl_tl_lain.id_disposisilain = tbl_disposisilain.id_disposisilain Where `status`='$status' $search ORDER by tbl_disposisilain.id_disposisilain DESC LIMIT $curr, $limit");
+            $query = mysqli_query($config,  "SELECT * FROM tbl_disposisisurat 
+                                             LEFT JOIN tbl_tl ON tbl_tl.id_disposisi = tbl_disposisisurat.id_disposisi 
+                                             LEFT JOIN tbl_user ON tbl_tl.kepada = tbl_user.id_user 
+                                             Where `status`='$status' $search ORDER by tbl_disposisisurat.id_disposisi DESC LIMIT $curr, $limit");
+            $query1 = mysqli_query($config, "SELECT * FROM tbl_disposisitlp 
+                                             LEFT JOIN tbl_tl_tlp ON tbl_tl_tlp.id_disposisitlp = tbl_disposisitlp.id_disposisitlp 
+                                             LEFT JOIN tbl_user ON tbl_tl_tlp.kepada = tbl_user.id_user                                             
+                                             Where `status`='$status' $search ORDER by tbl_disposisitlp.id_disposisitlp DESC LIMIT $curr, $limit");
+            $query2 = mysqli_query($config, "SELECT * FROM tbl_disposisilain 
+                                             LEFT JOIN tbl_tl_lain ON tbl_tl_lain.id_disposisilain = tbl_disposisilain.id_disposisilain 
+                                             LEFT JOIN tbl_user ON tbl_tl_lain.kepada = tbl_user.id_user 
+                                             Where `status`='$status' $search ORDER by tbl_disposisilain.id_disposisilain DESC LIMIT $curr, $limit");
             $no = 1;
             if(mysqli_num_rows($query) > 0 || mysqli_num_rows($query1) > 0 || mysqli_num_rows($query2) > 0){
                 if(mysqli_num_rows($query) > 0)
@@ -226,7 +235,7 @@ if(empty($_SESSION['admin'])){
                         echo'
                                         <td>'.$d." ".monthToIndonesia($m)." ".$y.'</td>';
 
-                        echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+                        echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['nama'].'</td>';
 
                         echo '  
                                         <td>'.substr($row['perihal'],0,200).'</td>';
@@ -259,7 +268,7 @@ if(empty($_SESSION['admin'])){
                         echo'
                                         <td>'.$d." ".monthToIndonesia($m)." ".$y.'</td>';
 
-                        echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+                        echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['nama'].'</td>';
 
                         echo '  
                                         <td>'.substr($row['perihal'],0,200).'</td>';
@@ -292,7 +301,7 @@ if(empty($_SESSION['admin'])){
                         echo'
                                         <td>'.$d." ".monthToIndonesia($m)." ".$y.'</td>';
 
-                        echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+                        echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['nama'].'</td>';
 
                         echo '  
                                         <td>'.substr($row['perihal'],0,200).'</td>';
