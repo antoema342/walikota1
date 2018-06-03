@@ -228,14 +228,13 @@
                                         } elseif($m == "12"){
                                             $nm = "Desember";
                                         }
-
                                         echo'
                                         <td>'.$d." ".$nm." ".$y.'</td>';
 
+                                        echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+
                                         echo '  
                                         <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
-
-                                        echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
 
                                         if(!empty($row['foto'])){
                                             echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
@@ -292,10 +291,10 @@
                                       echo'
                                         <td>'.$d." ".$nm." ".$y.'</td>';
 
+                                      echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+
                                       echo '  
                                         <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
-
-                                      echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
 
                                       if(!empty($row['foto'])){
                                           echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
@@ -352,10 +351,10 @@
                                       echo'
                                         <td>'.$d." ".$nm." ".$y.'</td>';
 
+                                      echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+
                                       echo '  
                                         <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
-
-                                      echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
 
                                       if(!empty($row['foto'])){
                                           echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
