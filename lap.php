@@ -57,7 +57,7 @@
                                     <div class="col m7">
                                         <ul class="left">
                                             <li class="waves-effect waves-light hide-on-small-only"><a href="?page=tsm" class="judul"> Rekap Laporan Selesai</a></li>
-                                            
+
                                         </ul>
                                     </div>
                                     <div class="col m5 hide-on-med-and-down">
@@ -120,7 +120,7 @@
                 ?>
 
                 <!-- Row form Start -->
-                
+
                     <!-- Row form END -->
                     <?php
                     echo '
@@ -206,7 +206,7 @@
                                             echo '<em>Tidak ada file yang di upload</em>';
                                         } echo '</td>
                                         <td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
-                                      
+
 
                                         $y = substr($row['tgl_surat'],0,4);
                                         $m = substr($row['tgl_surat'],5,2);
@@ -239,17 +239,18 @@
                                         }
                                         echo '
 
-                                        <td>'.$row['perihal'].'<br/><hr/>'.$d." ".$nm." ".$y.'</td>
+                                        <td>'.$row['perihal'].'</td>
+                                        <td>'.$d." ".$nm." ".$y.'</td>
                                         <td>'.$row['keterangan'].'</td>
                                         <td>Surat</td>
                                         <td>'.$row['status'].'</td>
                                         ';
-                                                    
+
                                         echo '
                                         </td>
                                     </tr>';
                                 }
-                                
+
                                 if(mysqli_num_rows($query1) > 0)
                                   while($row = mysqli_fetch_array($query1)){
                                       echo '
@@ -262,7 +263,7 @@
                                             echo '<em>Tidak ada file yang di upload</em>';
                                         } echo '</td>
                                         <td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
-                                      
+
 
                                         $y = substr($row['tgl_telepon'],0,4);
                                         $m = substr($row['tgl_telepon'],5,2);
@@ -295,12 +296,13 @@
                                         }
                                         echo '
 
-                                        <td>'.$row['perihal'].'<br/><hr/>'.$d." ".$nm." ".$y.'</td>
+                                        <td>'.$row['perihal'].'</td>
+                                        <td>'.$d." ".$nm." ".$y.'</td>
                                         <td>'.$row['keterangan'].'</td>
                                         <td>Telepon</td>
                                         <td>'.$row['status'].'</td>
                                         ';
-                                                    
+
                                         echo '
                                         </td>
                                     </tr>';
@@ -318,7 +320,7 @@
                                             echo '<em>Tidak ada file yang di upload</em>';
                                         } echo '</td>
                                         <td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
-                                      
+
 
                                         $y = substr($row['tgl_lain'],0,4);
                                         $m = substr($row['tgl_lain'],5,2);
@@ -351,12 +353,13 @@
                                         }
                                         echo '
 
-                                       <td>'.$row['perihal'].'<br/><hr/>'.$d." ".$nm." ".$y.'</td>
+                                       <td>'.$row['perihal'].'</td>
+                                        <td>'.$d." ".$nm." ".$y.'</td>
                                         <td>'.$row['keterangan'].'</td>
                                         <td>Lain-Lain</td>
                                         <td>'.$row['status'].'</td>
                                         ';
-                                                    
+
                                         echo '
                                         </td>
                                     </tr>';
@@ -414,6 +417,6 @@
                 }
             }
         }
-    
-                    
+
+
  ?>
