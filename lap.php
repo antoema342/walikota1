@@ -203,47 +203,17 @@
                                         $m = substr($row['tgl_surat'],5,2);
                                         $d = substr($row['tgl_surat'],8,2);
 
-                                        if($m == "01"){
-                                            $nm = "Januari";
-                                        } elseif($m == "02"){
-                                            $nm = "Februari";
-                                        } elseif($m == "03"){
-                                            $nm = "Maret";
-                                        } elseif($m == "04"){
-                                            $nm = "April";
-                                        } elseif($m == "05"){
-                                            $nm = "Mei";
-                                        } elseif($m == "06"){
-                                            $nm = "Juni";
-                                        } elseif($m == "07"){
-                                            $nm = "Juli";
-                                        } elseif($m == "08"){
-                                            $nm = "Agustus";
-                                        } elseif($m == "09"){
-                                            $nm = "September";
-                                        } elseif($m == "10"){
-                                            $nm = "Oktober";
-                                        } elseif($m == "11"){
-                                            $nm = "November";
-                                        } elseif($m == "12"){
-                                            $nm = "Desember";
-                                        }
+                                        $ytl = substr($row['tgl'],0,4);
+                                        $mtl = substr($row['tgl'],5,2);
+                                        $dtl = substr($row['tgl'],8,2);
+
                                         echo'
-                                        <td>'.$d." ".$nm." ".$y.'</td>';
+                                        <td>'.$d." ".monthToIndonesia($m)." ".$y.'</td>';
 
                                         echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
 
-                                        echo '  
-                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
-
-                                        if(!empty($row['foto'])){
-                                            echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
-                                        } else {
-                                            echo '<em>Tidak ada file yang di upload</em>';
-                                        } echo '</td>';
-
                                         echo'
-                                        <td>'.date("d F Y",strtotime($row['tgl'])).'</td>
+                                        <td>'.$dtl." ".monthToIndonesia($mtl)." ".$ytl.'</td>
                                         <td>'.$row['keterangan'].'</td>
                                         <td>Surat</td>
                                         <td>'.$row['status'].'</td>
@@ -259,51 +229,21 @@
                                       echo '
                                         <td>'.$no++. '</td>';
 
-                                        $y = substr($row['tgl_telepon'],0,4);
-                                        $m = substr($row['tgl_telepon'],5,2);
-                                        $d = substr($row['tgl_telepon'],8,2);
+                                      $y = substr($row['tgl_telepon'],0,4);
+                                      $m = substr($row['tgl_telepon'],5,2);
+                                      $d = substr($row['tgl_telepon'],8,2);
 
-                                        if($m == "01"){
-                                            $nm = "Januari";
-                                        } elseif($m == "02"){
-                                            $nm = "Februari";
-                                        } elseif($m == "03"){
-                                            $nm = "Maret";
-                                        } elseif($m == "04"){
-                                            $nm = "April";
-                                        } elseif($m == "05"){
-                                            $nm = "Mei";
-                                        } elseif($m == "06"){
-                                            $nm = "Juni";
-                                        } elseif($m == "07"){
-                                            $nm = "Juli";
-                                        } elseif($m == "08"){
-                                            $nm = "Agustus";
-                                        } elseif($m == "09"){
-                                            $nm = "September";
-                                        } elseif($m == "10"){
-                                            $nm = "Oktober";
-                                        } elseif($m == "11"){
-                                            $nm = "November";
-                                        } elseif($m == "12"){
-                                            $nm = "Desember";
-                                        }
+                                      $ytl = substr($row['tgl'],0,4);
+                                      $mtl = substr($row['tgl'],5,2);
+                                      $dtl = substr($row['tgl'],8,2);
+
                                       echo'
-                                        <td>'.$d." ".$nm." ".$y.'</td>';
+                                        <td>'.$d." ".monthToIndonesia($m)." ".$y.'</td>';
 
                                       echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
 
-                                      echo '  
-                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
-
-                                      if(!empty($row['foto'])){
-                                          echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
-                                      } else {
-                                          echo '<em>Tidak ada file yang di upload</em>';
-                                      } echo '</td>';
-
                                       echo'
-                                        <td>'.date("d F Y",strtotime($row['tgl'])).'</td>
+                                        <td>'.$dtl." ".monthToIndonesia($mtl)." ".$ytl.'</td>
                                         <td>'.$row['keterangan'].'</td>
                                         <td>Telepon</td>
                                         <td>'.$row['status'].'</td>
@@ -323,47 +263,18 @@
                                         $m = substr($row['tgl_lain'],5,2);
                                         $d = substr($row['tgl_lain'],8,2);
 
-                                        if($m == "01"){
-                                            $nm = "Januari";
-                                        } elseif($m == "02"){
-                                            $nm = "Februari";
-                                        } elseif($m == "03"){
-                                            $nm = "Maret";
-                                        } elseif($m == "04"){
-                                            $nm = "April";
-                                        } elseif($m == "05"){
-                                            $nm = "Mei";
-                                        } elseif($m == "06"){
-                                            $nm = "Juni";
-                                        } elseif($m == "07"){
-                                            $nm = "Juli";
-                                        } elseif($m == "08"){
-                                            $nm = "Agustus";
-                                        } elseif($m == "09"){
-                                            $nm = "September";
-                                        } elseif($m == "10"){
-                                            $nm = "Oktober";
-                                        } elseif($m == "11"){
-                                            $nm = "November";
-                                        } elseif($m == "12"){
-                                            $nm = "Desember";
-                                        }
+                                      $ytl = substr($row['tgl'],0,4);
+                                      $mtl = substr($row['tgl'],5,2);
+                                      $dtl = substr($row['tgl'],8,2);
+
                                       echo'
-                                        <td>'.$d." ".$nm." ".$y.'</td>';
+                                        <td>'.$d." ".monthToIndonesia($m)." ".$y.'</td>';
 
                                       echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
 
-                                      echo '  
-                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
-
-                                      if(!empty($row['foto'])){
-                                          echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
-                                      } else {
-                                          echo '<em>Tidak ada file yang di upload</em>';
-                                      } echo '</td>';
 
                                       echo'
-                                        <td>'.date("d F Y",strtotime($row['tgl'])).'</td>
+                                        <td>'.$dtl." ".monthToIndonesia($mtl)." ".$ytl.'</td>
                                         <td>'.$row['keterangan'].'</td>
                                         <td>Lain-lain</td>
                                         <td>'.$row['status'].'</td>
