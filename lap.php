@@ -363,7 +363,7 @@
                                       } echo '</td>';
 
                                       echo'
-                                        <td>'.$row['tgl'].'</td>
+                                        <td>'.date("d F Y",strtotime($row['tgl'])).'</td>
                                         <td>'.$row['keterangan'].'</td>
                                         <td>Surat</td>
                                         <td>'.$row['status'].'</td>

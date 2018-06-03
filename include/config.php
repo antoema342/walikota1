@@ -1,4 +1,6 @@
 <?php
+    setlocale(LC_ALL,'id_ID');
+
     $host = "localhost";  
     $username = "root";   
     $password = "";   
