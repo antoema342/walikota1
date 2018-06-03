@@ -235,14 +235,16 @@
                                         echo '  
                                         <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
 
+                                        echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+
                                         if(!empty($row['foto'])){
                                             echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
                                         } else {
                                             echo '<em>Tidak ada file yang di upload</em>';
-                                        } echo '</td>
-                                        <td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+                                        } echo '</td>';
 
                                         echo'
+                                        <td>-</td>
                                         <td>'.$row['keterangan'].'</td>
                                         <td>Surat</td>
                                         <td>'.$row['status'].'</td>
@@ -256,16 +258,7 @@
                                 if(mysqli_num_rows($query1) > 0)
                                   while($row = mysqli_fetch_array($query1)){
                                       echo '
-                                        <td>'.$no++. '</td>
-                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
-
-                                        if(!empty($row['foto'])){
-                                            echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
-                                        } else {
-                                            echo '<em>Tidak ada file yang di upload</em>';
-                                        } echo '</td>
-                                        <td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
-
+                                        <td>'.$no++. '</td>';
 
                                         $y = substr($row['tgl_telepon'],0,4);
                                         $m = substr($row['tgl_telepon'],5,2);
@@ -302,14 +295,16 @@
                                       echo '  
                                         <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
 
+                                      echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+
                                       if(!empty($row['foto'])){
                                           echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
                                       } else {
                                           echo '<em>Tidak ada file yang di upload</em>';
-                                      } echo '</td>
-                                        <td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+                                      } echo '</td>';
 
                                       echo'
+                                        <td>-</td>
                                         <td>'.$row['keterangan'].'</td>
                                         <td>Surat</td>
                                         <td>'.$row['status'].'</td>
@@ -323,16 +318,7 @@
                                 if(mysqli_num_rows($query2) > 0)
                                   while($row = mysqli_fetch_array($query2)){
                                       echo '
-                                        <td>'.$no++. '</td>
-                                        <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
-
-                                        if(!empty($row['foto'])){
-                                            echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
-                                        } else {
-                                            echo '<em>Tidak ada file yang di upload</em>';
-                                        } echo '</td>
-                                        <td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
-
+                                        <td>'.$no++. '</td>';
 
                                         $y = substr($row['tgl_lain'],0,4);
                                         $m = substr($row['tgl_lain'],5,2);
@@ -369,14 +355,16 @@
                                       echo '  
                                         <td>'.substr($row['perihal'],0,200).'<br/><br/><strong>File :</strong>';
 
+                                      echo '<td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+
                                       if(!empty($row['foto'])){
                                           echo ' <strong><a href="?page=tfile&id_surat='.$row['id_disposisi'].'">'.$row['foto'].'</a></strong>';
                                       } else {
                                           echo '<em>Tidak ada file yang di upload</em>';
-                                      } echo '</td>
-                                        <td>'.$row['skpd_ukpd'].'<br/><hr/>'.$row['kepada'].'</td>';
+                                      } echo '</td>';
 
                                       echo'
+                                        <td>-</td>
                                         <td>'.$row['keterangan'].'</td>
                                         <td>Surat</td>
                                         <td>'.$row['status'].'</td>
